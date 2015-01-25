@@ -1,0 +1,24 @@
+CODE BOOK for run-analysis.R script
+
+Variables have been described in sequence of creation
+
+1.	xtrain – Data frame with Training data
+2.	subtrain – Data vector  with subject data – Training
+3.	ytrain - Data vector  with activity data – Training
+4.	train_data_wip – Data frame with full Training data
+5.	xtest - Data frame with Test data 
+6.	subtest - Data vector  with subject data – Test
+7.	ytest - Data vector  with activity data – Test
+8.	test_data_wip - Data frame with full Test data
+9.	data_wip – Data frame with full Training and Test data
+10.	features –Data frame with features data
+11.	mean_pos_cins – Vector with variables names with mean()
+12.	mean_cols – Subset data frame from features data frame with “mean”
+13.	std_pos_cins – Vector with variables names with std()
+14.	std_cols – Subset data frame from features data frame with “std”
+15.	cofi – Data frame with “columns of interest”; combination of “mean” and “std”
+16.	sub_label – Variable to add subject label to “cofi”
+17.	act_label –Temporary  variable to add activity label to “cofi”; reused with data from activity_labels.txt
+18.	act_name – Vector with activity code from data_wip which is replaced with activity descriptions
+19.	sub_act – Column name for a group identifier which is a combination of subject and activity description. 
+20.	Output – Data frame with average each VARIABLE for each ACTIVITY and each SUBJECT
